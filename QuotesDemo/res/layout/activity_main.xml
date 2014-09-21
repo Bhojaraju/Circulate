@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.debug.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:layout_gravity="center"
+         
+        >
+  
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      
+        android:height="300dp"
+       
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+      
+        android:layout_gravity="center"
+        android:gravity="center"
+        
+     
+       >
+
+    <ImageButton
+        android:id="@+id/imagePrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:src="@drawable/prev"
+        android:onClick="select" 
+        android:gravity="center"/>
+    
+     <ImageButton
+            android:id="@+id/imageRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle"
+             android:onClick="select" 
+               android:gravity="center"/>
+
+     <ImageButton
+         android:id="@+id/imageNext"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/next"
+          android:onClick="select" 
+          android:gravity="center"/>
+
+      </LinearLayout>
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Page No" />
+
+</RelativeLayout>
